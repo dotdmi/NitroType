@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nitro Type Cheat</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #0d0d0d;
+      color: #00ffcc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px 100px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.85);
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #00ffcc;
+      box-shadow: 0 2px 10px #00ffcc66;
+      z-index: 10;
+    }
+
+    .section-title {
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px 0 20px;
+      font-size: 18px;
+      text-align: left;
+      color: #00ffee;
+      border-left: 4px solid #00ffee;
+      padding-left: 10px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: rgba(0, 255, 204, 0.05);
+      border: 1px solid #00ffcc33;
+      box-shadow: 0 0 20px #00ffcc22;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      transition: 0.3s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .card:hover {
+      box-shadow: 0 0 40px #00ffcc66;
+      transform: scale(1.02);
+    }
+
+    .card h3 {
+      color: #00ffcc;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #00ffcc;
+    }
+
+    .card p {
+      color: #aaffee;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .fake-slider {
+      margin-top: 10px;
+      background: #00ffcc33;
+      border-radius: 10px;
+      height: 10px;
+      width: 100%;
+      position: relative;
+    }
+
+    .fake-slider::after {
+      content: "";
+      position: absolute;
+      height: 14px;
+      width: 14px;
+      background: #00ffcc;
+      border-radius: 50%;
+      top: -2px;
+      left: 60%;
+      box-shadow: 0 0 8px #00ffcc;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    select {
+      background: #000;
+      border: 1px solid #00ffcc66;
+      color: #00ffcc;
+      padding: 8px;
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      background: #00ffcc33;
+      color: #00ffcc;
+      border: 1px solid #00ffcc88;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    button:hover {
+      background: #00ffcc66;
+      color: #000;
+    }
+
+    /* Space between buttons */
+    .open-nitro-btn {
+      margin-top: 20px;
+    }
+
+    /* Cheat Activated page styles */
+    .message {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ffcc; /* Changed to blue matching theme */
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Center the content of the new page */
+    .message-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #0d0d0d;
+      color: #00ffcc;
+    }
+
+    /* Instructions Section */
+    .instructions {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #aaffee;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Credits Section at the Bottom */
+    .credits {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaffee;
+      text-align: center;
+    }
+
+    .credits a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .credits a:hover {
+      color: #00ffee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    NITRO TYPE CHEAT DASHBOARD v3.7
+  </header>
+
+  <!-- Instructions Section at the Top -->
+  <div class="instructions">
+    <p>Once you’ve selected all the cheats you want, click the <strong>"Open Nitro Type"</strong> button at the bottom.</p>
+  </div>
+
+  <!-- Main Cheat Tools -->
+  <div class="section-title">⚙️ Main Cheat Tools</div>
+  <div class="main-content">
+    <div class="card">
+      <h3>Unlock All Cars</h3>
+      <p>Instantly unlock every car in the garage.</p>
+      <div class="fake-slider"></div>
+    </div>
+    <div class="card">
+      <h3>Upload Custom Car</h3>
+      <p>Choose any image and race with it as your car.</p>
+      <input type="file">
+    </div>
+    <div class="card">
+      <h3>Change Racer Name</h3>
+      <p>Replace your current name with anything.</p>
+      <input type="text" placeholder="Enter new name">
+    </div>
+    <div class="card">
+      <h3>Spoofer</h3>
+      <p>Mask your IP and location. Race from anywhere.</p>
+      <div class="fake-slider"></div>
+    </div>
+    <div class="card">
+      <h3>Change Level</h3>
+      <p>Set your desired level manually.</p>
+      <input type="number" placeholder="e.g. 999">
+    </div>
+    <div class="card">
+      <h3>Change Cash</h3>
+      <p>Set any amount of cash to show on your account.</p>
+      <input type="number" placeholder="e.g. 99999999">
+    </div>
+    <div class="card">
+      <h3>Choose Rank</h3>
+      <p>Select your Nitro Type rank:</p>
+      <select>
+        <option>🎓 Learner</option>
+        <option>📘 Novice</option>
+        <option>🏁 Rookie</option>
+        <option>🚗 Pro</option>
+        <option>⚡ Ace</option>
+        <option>🔥 Expert</option>
+        <option>🏆 Champion</option>
+        <option>👑 Master</option>
+        <option>🧠 Epic</option>
+        <option>🦄 Legend</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Extreme Cheat Buttons -->
+  <div class="section-title">💀 Extreme Cheat Buttons</div>
+  <div class="main-content">
+    <div class="card">
+      <h3>Instant Teleport</h3>
+      <p>Teleport your car to the end of the race immediately.</p>
+      <button onclick="alert('Teleport activated (not really).')">Activate</button>
+    </div>
+    <div class="card">
+      <h3>Unlock All Stickers</h3>
+      <p>Adds every Nitro Type sticker to your account.</p>
+      <button onclick="alert('Stickers unlocked (fake).')">Get Stickers</button>
+    </div>
+    <div class="card">
+      <h3>Give Gold Membership</h3>
+      <p>Permanently sets your account to Gold status.</p>
+      <button onclick="alert('Gold activated (jk).')">Give Gold</button>
+    </div>
+    <div class="card">
+      <h3>Crash Game</h3>
+      <p>Force crash the race for everyone else. 💥</p>
+      <button onclick="alert('System error... just kidding 😅')">Crash</button>
+    </div>
+    <div class="card">
+      <h3>View Player Speeds</h3>
+      <p>See everyone's WPM live during the race.</p>
+      <button onclick="alert('Live speeds loaded (they’re not).')">Show Speeds</button>
+    </div>
+    <div class="card">
+      <h3>Disqualify Racers</h3>
+      <p>Kick all other racers instantly for a guaranteed win.</p>
+      <button onclick="alert('Disqualified all opponents (not).')">Disqualify All</button>
+    </div>
+  </div>
+
+  <!-- Non-Bannable Tools -->
+  <div class="section-title">🛡️ Non-Bannable Optimizations</div>
+  <div class="main-content">
+    <div class="card">
+      <h3>Fix Input Delay</h3>
+      <p>Reduces lag spikes and improves key response.</p>
+      <div class="fake-slider"></div>
+    </div>
+    <div class="card">
+      <h3>Boost Performance</h3>
+      <p>Improves browser performance.</p>
+      <div class="fake-slider"></div>
+    </div>
+    <div class="card">
+      <h3>Optimize Typing Path</h3>
+      <p>Uses AI to auto-select the shortest typing route.</p>
+      <div class="fake-slider"></div>
+    </div>
+  </div>
+
+  <!-- Open Nitro Type Button -->
+  <div class="main-content">
+    <div class="card open-nitro-btn" style="width: 100%; max-width: 350px;">
+      <button onclick="openNitroType();">
+        Open Nitro Type Website
+      </button>
+    </div>
+  </div>
+
+  <!-- Credits Section -->
+  <div class="credits">
+    <p>Created By <a href="https://github.com/dotdmi" target="_blank">DMI</a></p>
+  </div>
+
+  <script>
+    function openNitroType() {
+      // Open a new tab with a custom page showing "Cheat Activated"
+      const newWindow = window.open('', '_blank');
+      newWindow.document.write(`
+        <html>
+        <head>
+          <title>Cheat Activated</title>
+          <style>
+            body {
+              background-color: #0d0d0d;
+              color: #00ffcc;
+              font-family: 'Courier New', monospace;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+            }
+            .message {
+              font-size: 24px;
+              font-weight: bold;
+              color: #00ffcc;
+              text-align: center;
+              margin-top: 50px;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="message">Cheat Activated! Redirecting to Nitro Type...</div>
+        </body>
+        </html>
+      `);
+
+      // After 3 seconds, redirect to Nitro Type
+      setTimeout(function() {
+        newWindow.location.href = 'https://www.nitrotype.com';
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
